@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hahu Inc.</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/fullcalendar.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="Scripts/jquery-ui-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="Scripts/moment.js"></script>
+    <script src="js/fullcalendar.js"></script>
+    <style type="text/css">
+        .slide {
+            height: 100px;
+            /*display: inline;*/
+            float: left;
+            position:absolute;
+            /*border: 1px solid red;*/
+        }
+
+        .header-height {
+            height:200px;
+        }
+
+        .lg-glyphicons {
+            font-size: 5.0em;
+            color: #a94442;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Hahu Training Institute</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Syllabus</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron header-height">
+            <div class="row" id="contentPage">
+                <div id="slides" class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="slides_container">
+                        <div class="slide col-lg-12" id="firstSlide"><h1>A warm welcome!</h1></div>
+                        <div class="slide col-lg-12" style="display:none;"><h1>Message1</h1></div>
+                        <div class="slide col-lg-12" style="display:none;">Message2</div>
+                        <div class="slide col-lg-12" style="display:none;">Message3</div>
+                        <div class="slide col-lg-12" style="display:none;">Message4</div>
+                        <div class="slide col-lg-12" style="display:none;">Message5</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Look inside</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <span class="glyphicon glyphicon-plus-sign lg-glyphicons"></span>
+                    <div class="caption">
+                        <h3>Trainings in software testing</h3>
+                        <p>Detailed content</p>
+                        <p>
+                            <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <span class="glyphicon glyphicon-comment lg-glyphicons"></span>
+                    <div class="caption">
+                        <h3>Success stories</h3>
+                        <p>Here are some of our amazing stories!</p>
+                        <p>
+                            <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <span class="glyphicon glyphicon-share lg-glyphicons"></span>
+                    <div class="caption">
+                        <h3>Our offerings</h3>
+                        <p>Find out what we can help you with our programs.</p>
+                        <p>
+                            <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <span class="glyphicon glyphicon-log-in lg-glyphicons"></span>
+                    <div class="caption">
+                        <h3>Signup/Sign in.</h3>
+                        <p>Become a member for detailed class schedules</p>
+                        <p>
+                            <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Calendar view -->
+        <div id="calendar">
+
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <script>
+
+        function slideShow() {
+            var displayToggled = false;
+            var current1 = $('.slide:visible');
+            var nextSlide = current1.next('.slide');
+            var hideoptions = {
+                "direction": "left",
+                "mode": "hide"
+            };
+            var showoptions = {
+                "direction": "right",
+                "mode": "show"
+            };
+            if (current1.is(':last-child')) {
+                current1.effect("slide", hideoptions, 1000);
+                $("#firstSlide").effect("slide", showoptions, 1000);
+            }
+            else {
+                current1.effect("slide", hideoptions, 1000);
+                nextSlide.effect("slide", showoptions, 1000);
+            }
+        }
+            
+        $(document).ready(function (event) {
+
+            $('#calendar').fullCalendar({
+                events: [
+                    {
+                        title: 'event1',
+                        start: '2014-11-26'
+                    },
+                    {
+                        title: 'event2',
+                        start: '2014-11-27',
+                        end: '2014-11-28'
+                    },
+                    {
+                        title: 'event3',
+                        start: '2014-11-29T15:30:00',
+                        allDay: true // will make the time show
+                    }
+                ]
+            })
+
+            setInterval(slideShow, 3000);
+            slideShow();
+        });
+    </script>
+
+</body>
+
+</html>
