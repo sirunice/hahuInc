@@ -1,0 +1,75 @@
+﻿body {
+    background-color: #fcfcfc;
+}
+
+.lg-glyphicons {
+    font-size: 5.0em;
+    color: #a94442;
+}
+
+.hahu-row {
+    height: 400px;
+    vertical-align: central;
+}
+
+.mainpage {
+    /*background-color:white;*/
+    /*border-width: 2px;
+    border-style: solid;
+    border-color: #f6f6f6;*/
+}
+
+.hahu-about-fullwidth{
+    background-color: rgb(217, 237, 247);
+    color: rgb(49, 112, 143);
+}
+
+.hahu-apply-fullwidth{
+    background-color: rgb(223, 240, 216);
+    color: rgb(60, 118, 61);
+}
+
+.hahu-transparent-fullwidth{
+}
+
+
+.hahu-row-left {
+    float:left;
+    width:20%;
+    padding:20px;
+    text-align:center;
+}
+
+.hahu-row-right {
+    float:left;
+    width:80%;
+    padding:20px;
+}
+
+.hahu-row-end {
+    clear:left;
+}
+
+.hahu-carousel {
+    height: 200px;
+}
+
+.hahu-carousel-item {
+    float:left;
+    width:90%;
+}
+
+.hahu-carousel-entry {
+    padding:20px;
+    text-align:center;
+}
+
+.hahu-carousel-left {
+    float:left;
+    width:5%;
+    max-width:50px;
+}
+
+.hahu-carousel-end {
+    clear:left;
+}

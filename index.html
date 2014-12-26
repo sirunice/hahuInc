@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/heroic-features.css" rel="stylesheet">
     <link href="css/fullcalendar.css" rel="stylesheet" />
+    <link href="css/hahuinc.css" rel="stylesheet" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,25 +30,6 @@
     <script src="js/bootstrap.js"></script>
     <script src="Scripts/moment.js"></script>
     <script src="js/fullcalendar.js"></script>
-    <style type="text/css">
-        .slide {
-            height: 100px;
-            /*display: inline;*/
-            float: left;
-            position:absolute;
-            /*border: 1px solid red;*/
-        }
-
-        .header-height {
-            height:200px;
-        }
-
-        .lg-glyphicons {
-            font-size: 5.0em;
-            color: #a94442;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -68,6 +50,9 @@
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
+                        <a href="#">Sign In</a>
+                    </li>
+                    <li>
                         <a href="#">Home</a>
                     </li>
                     <li>
@@ -84,104 +69,175 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-
+    <div class="container hahu-row">
         <!-- Jumbotron Header -->
-        <header class="jumbotron header-height">
-            <div class="row" id="contentPage">
-                <div id="slides" class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="slides_container">
-                        <div class="slide col-lg-12" id="firstSlide"><h1>A warm welcome!</h1></div>
-                        <div class="slide col-lg-12" style="display:none;"><h1>Message1</h1></div>
-                        <div class="slide col-lg-12" style="display:none;">Message2</div>
-                        <div class="slide col-lg-12" style="display:none;">Message3</div>
-                        <div class="slide col-lg-12" style="display:none;">Message4</div>
-                        <div class="slide col-lg-12" style="display:none;">Message5</div>
-                    </div>
-                </div>
+        <header class="jumbotron">
+            <div class="row hahu-row" id="contentPage">
+
+                <!--  Carousel - consult the Twitter Bootstrap docs at http://twitter.github.com/bootstrap/javascript.html#carousel -->
+                <div id="this-carousel-id" class="carousel slide hahu-carousel">
+                    <!-- class of slide for animation -->
+                    <!--  Next and Previous controls below href values must reference the id for this carousel -->
+                    <div class="hahu-carousel-left"><a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a></div>
+                    <div class="carousel-inner hahu-carousel-item">
+                        <div class="item active hahu-carousel-entry">
+                            <!-- class of active since it's the first item -->
+                            <h3>Job Oriented, Hands on, Class Room Based Professional Training and Placement</h3>
+                            <div class="carousel-caption">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item hahu-carousel-entry">
+                            <h3>If you currently working as an IT professional and want to improve your skills and increase your marketability by acquiring new skills, you are in the right place.</h3>
+                            <div class="carousel-caption hahu-carousel-item">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item hahu-carousel-entry">
+                            <h3>If you have been graduated in IT related fields, or worked as IT professional before but have no clue how to join the job market in USA, you are at the right place.</h3>
+                            <div class="carousel-caption">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item hahu-carousel-entry">
+                            <h3>If you are a recent graduate and looking for a way to join the job industry, you are in the right place.</h3>
+                            <div class="carousel-caption">
+                                <p></p>
+                            </div>
+                        </div>
+                        
+                    </div><!-- /.carousel-inner -->
+                    <div class="hahu-carousel-left"><a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a></div>
+                    <div class="hahu-row-end"></div>
+                </div><!-- /.carousel -->
             </div>
         </header>
-        <!-- Title -->
+
+    </div>
+
+    <div class="hahu-row hahu-about-fullwidth">
+        <div class="container hahu-row">
+            <div class="row">
+                <div>
+                    <div class="hahu-row-left">
+                        <div class="glyphicon glyphicon-plus-sign lg-glyphicons"></div>
+                        <div><p><h3>You are in the right place</h3></p></div>
+                    </div>
+                    <div class="caption hahu-row-right">
+                        <!--<p>If you currently working as an IT professional and want to improve your skills and increase your marketability by acquiring new skills, you are in the right place.</p>
+                        <p>If you have been graduated in IT related fields, or worked as IT professional before but have no clue how to join the job market in USA, you are at the right place.</p>-->
+                        <p>Whatever your background may be, if you are passionate about IT and are willing to learn programming and become an IT professional, you are in the right place</p>
+                        <!--<p>If you are a recent graduate and looking for a way to join the job industry, you are in the right place.</p>-->
+                        <p><!--If you are an IT Service Company and looking to keep your employees skill up to date and competitive, you are in the right place.--></p>
+                        <p>We have designed our programs in such a way that students from diversified educational and technical background learn what it takes to become an IT professional and, depending on the student's effort and commitment, be ready for various job opportunities.</p>
+                        <!--<p>
+                            <a href="#" class="btn btn-default">Click here to find more Information</a>
+                        </p>-->
+                    </div>
+                    <div class="hahu-row-end"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hahu-row hahu-transparent-fullwidth">
+        <div class="container hahu-row">
+            <div class="hero-feature row">
+                <div>
+                    <div class="hahu-row-left">
+                        <div class="glyphicon glyphicon-comment lg-glyphicons"></div>
+                        <div><h3>Objectives</h3></div>
+                    </div>
+                    <div class="hahu-row-right">
+                        <p>
+                            WELCOME TO HaHu IT Training Center! HaHu IT Training is established with the objective of preparing IT professionals for various job positions in the IT industry. Our objective is to train IT professionals who have the right and up to date skill set for the ever changing demand of the industry. We are committed to provide our students  not only the skill they need to win job interviews but also make them confident on work places as our training are hands-on intensive and our trainers are well experienced senior Software Engineers and Architects working in the 500 fortune companies.
+                            <!--<a href="#" class="btn btn-default">More Info</a>-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.row -->
+    <!-- Page Features -->
+    <div class="hahu-row hahu-about-fullwidth">
+        <div class="container hahu-row">
+            <div class="row">
+                <div>
+                    <div class="hahu-row-left">
+                        <div class="glyphicon glyphicon-plus-sign lg-glyphicons"></div>
+                        <div><p><h2>Apply</h2></p></div>
+                    </div>
+                    <div class="caption hahu-row-right">
+                        <p>To apply for any of our programs, please, complete the following Information Request Form and we will contact you with more information in 3-5 business days. Please consult our School Calendar for upcoming enrollment</p>
+                        <p>
+                            <a href="#" class="btn btn-default">Click here to find more Information</a>
+                        </p>
+                    </div>
+                    <div class="hahu-row-end"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hahu-row hahu-transparent-fullwidth">
+        <div class="container hahu-row">
+            <div class="hero-feature row">
+                <div>
+                    <div class="hahu-row-left">
+                        <div class="glyphicon glyphicon-comment lg-glyphicons"></div>
+                        <div><h3>Our courses</h3></div>
+                    </div>
+                    <div class="hahu-row-right">
+                        <p>
+                            Core Courses
+                        </p>
+                        <p>
+                            <ol>
+                                <li>Software Engineering Principles</li>
+                                <li>Introduction to Programming and Computer Science</li>
+                                <li>Fundamentals of Object Oriented Programming using C#</li>
+                                <li>Introduction to MS SQL Server 2014</li>
+                                <li>Introduction to Web Technologies</li>
+                                <li></li>
+
+                            </ol>
+                        </p>
+                        <p>Specialized and Advanced Courses</p>
+                        <p>
+                            <ol>
+                                <li>Data structure and Algorithm</li>
+                                <li>Software Testing and Testing Tools</li>
+                                <li>Designing and Implementing Business Intelligence Solutions</li>
+                                <li>IT Project Management</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.row -->
+    <!-- Calendar view -->
+    <div id="calendar" class="col-lg-8 col-md-6 col-sm-3 col-xs-1">
+
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
         <div class="row">
             <div class="col-lg-12">
-                <h3>Look inside</h3>
+                <p>Copyright &copy; Your Website 2014</p>
             </div>
         </div>
-        <!-- /.row -->
-
-        <!-- Page Features -->
-        <div class="row text-center">
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <span class="glyphicon glyphicon-plus-sign lg-glyphicons"></span>
-                    <div class="caption">
-                        <h3>Trainings in software testing</h3>
-                        <p>Detailed content</p>
-                        <p>
-                            <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <span class="glyphicon glyphicon-comment lg-glyphicons"></span>
-                    <div class="caption">
-                        <h3>Success stories</h3>
-                        <p>Here are some of our amazing stories!</p>
-                        <p>
-                            <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <span class="glyphicon glyphicon-share lg-glyphicons"></span>
-                    <div class="caption">
-                        <h3>Our offerings</h3>
-                        <p>Find out what we can help you with our programs.</p>
-                        <p>
-                            <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <span class="glyphicon glyphicon-log-in lg-glyphicons"></span>
-                    <div class="caption">
-                        <h3>Signup/Sign in.</h3>
-                        <p>Become a member for detailed class schedules</p>
-                        <p>
-                            <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <!-- Calendar view -->
-        <div id="calendar">
-
-        </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
+    </footer>
 
     </div>
     <!-- /.container -->
@@ -209,7 +265,7 @@
                 nextSlide.effect("slide", showoptions, 1000);
             }
         }
-            
+
         $(document).ready(function (event) {
 
             $('#calendar').fullCalendar({
@@ -231,8 +287,10 @@
                 ]
             })
 
-            setInterval(slideShow, 3000);
-            slideShow();
+            //setInterval(slideShow, 3000);
+            //slideShow();
+
+            $('.carousel').carousel()
         });
     </script>
 
