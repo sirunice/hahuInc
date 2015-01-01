@@ -19,6 +19,17 @@
     border-color: #f6f6f6;*/
 }
 
+.hahu-header {
+    background-image: url("/images/classroom.jpg");
+    filter: alpha(opacity=10);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+    opacity:0.1;
+    -moz-opacity: 0.10; 
+    
+    position:absolute; top:0px; left:0px; background-image:url('/images/classroom.jpg'); width:100%;margin-top:70px;
+
+}
+
 .hahu-about-fullwidth{
     background-color: rgb(217, 237, 247);
     color: rgb(49, 112, 143);

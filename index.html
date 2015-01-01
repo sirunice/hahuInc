@@ -69,51 +69,54 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container hahu-row">
-        <!-- Jumbotron Header -->
-        <header class="jumbotron">
-            <div class="row hahu-row" id="contentPage">
+    <div class="hahu-header hahu-row"></div>
+    <div class="hahu-row">
+        <div class="container">
+            <!-- Jumbotron Header -->
+            <header class="jumbotron">
+                <div class="row" id="contentPage">
+                    <!--  Carousel - consult the Twitter Bootstrap docs at http://twitter.github.com/bootstrap/javascript.html#carousel -->
+                    <div id="this-carousel-id" class="carousel slide hahu-carousel">
+                        <!-- class of slide for animation -->
+                        <!--  Next and Previous controls below href values must reference the id for this carousel -->
+                        <div class="hahu-carousel-left"><a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a></div>
+                        <div class="carousel-inner hahu-carousel-item">
+                            <div class="item active hahu-carousel-entry">
+                                <!-- class of active since it's the first item -->
+                                <h3>Job Oriented, Hands on, Class Room Based Professional Training and Placement</h3>
+                                <div class="carousel-caption">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="item hahu-carousel-entry">
+                                <h3>If you currently working as an IT professional and want to improve your skills and increase your marketability by acquiring new skills, you are in the right place.</h3>
+                                <div class="carousel-caption hahu-carousel-item">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="item hahu-carousel-entry">
+                                <h3>If you have been graduated in IT related fields, or worked as IT professional before but have no clue how to join the job market in USA, you are at the right place.</h3>
+                                <div class="carousel-caption">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="item hahu-carousel-entry">
+                                <h3>If you are a recent graduate and looking for a way to join the job industry, you are in the right place.</h3>
+                                <div class="carousel-caption">
+                                    <p></p>
+                                </div>
+                            </div>
 
-                <!--  Carousel - consult the Twitter Bootstrap docs at http://twitter.github.com/bootstrap/javascript.html#carousel -->
-                <div id="this-carousel-id" class="carousel slide hahu-carousel">
-                    <!-- class of slide for animation -->
-                    <!--  Next and Previous controls below href values must reference the id for this carousel -->
-                    <div class="hahu-carousel-left"><a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a></div>
-                    <div class="carousel-inner hahu-carousel-item">
-                        <div class="item active hahu-carousel-entry">
-                            <!-- class of active since it's the first item -->
-                            <h3>Job Oriented, Hands on, Class Room Based Professional Training and Placement</h3>
-                            <div class="carousel-caption">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="item hahu-carousel-entry">
-                            <h3>If you currently working as an IT professional and want to improve your skills and increase your marketability by acquiring new skills, you are in the right place.</h3>
-                            <div class="carousel-caption hahu-carousel-item">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="item hahu-carousel-entry">
-                            <h3>If you have been graduated in IT related fields, or worked as IT professional before but have no clue how to join the job market in USA, you are at the right place.</h3>
-                            <div class="carousel-caption">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="item hahu-carousel-entry">
-                            <h3>If you are a recent graduate and looking for a way to join the job industry, you are in the right place.</h3>
-                            <div class="carousel-caption">
-                                <p></p>
-                            </div>
-                        </div>
-                        
-                    </div><!-- /.carousel-inner -->
-                    <div class="hahu-carousel-left"><a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a></div>
-                    <div class="hahu-row-end"></div>
-                </div><!-- /.carousel -->
-            </div>
-        </header>
-
+                        </div><!-- /.carousel-inner -->
+                        <div class="hahu-carousel-left"><a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a></div>
+                        <div class="hahu-row-end"></div>
+                    </div><!-- /.carousel -->
+                </div>
+            </header>
+        </div>
     </div>
+
+
 
     <div class="hahu-row hahu-about-fullwidth">
         <div class="container hahu-row">
@@ -141,7 +144,7 @@
     </div>
 
     <div class="hahu-row hahu-transparent-fullwidth">
-        <div class="container hahu-row">
+        <div class="container">
             <div class="hero-feature row">
                 <div>
                     <div class="hahu-row-left">
@@ -151,7 +154,6 @@
                     <div class="hahu-row-right">
                         <p>
                             WELCOME TO HaHu IT Training Center! HaHu IT Training is established with the objective of preparing IT professionals for various job positions in the IT industry. Our objective is to train IT professionals who have the right and up to date skill set for the ever changing demand of the industry. We are committed to provide our students  not only the skill they need to win job interviews but also make them confident on work places as our training are hands-on intensive and our trainers are well experienced senior Software Engineers and Architects working in the 500 fortune companies.
-                            <!--<a href="#" class="btn btn-default">More Info</a>-->
                         </p>
                     </div>
                 </div>
@@ -224,8 +226,15 @@
 
     <!-- /.row -->
     <!-- Calendar view -->
-    <div id="calendar" class="col-lg-8 col-md-6 col-sm-3 col-xs-1">
-
+    <div class="hahu-transparent-fullwidth">
+        <div class="container">
+            <div class="panel panel-info">
+                <div class="panel-heading"><h2>Current Schedule</h2></div>
+                <div class="panel-body">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <hr>
@@ -247,20 +256,24 @@
         $(document).ready(function (event) {
 
             $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',                    right: 'month,agendaWeek,agendaDay'                }
+                ,
                 events: [
                     {
                         title: 'event1',
-                        start: '2014-11-26'
+                        start: '2014-12-31'
                     },
                     {
                         title: 'event2',
-                        start: '2014-11-27',
-                        end: '2014-11-28'
+                        start: '2014-12-31',
+                        end: '2014-12-31'
                     },
                     {
                         title: 'event3',
-                        start: '2014-11-29T15:30:00',
-                        allDay: true // will make the time show
+                        start: '2014-12-30T15:30:00',
+                        end: '2014-12-30T16:30',
+                        //allDay: true // will make the time show
                     }
                 ]
             })
