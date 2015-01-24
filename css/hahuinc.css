@@ -4,19 +4,12 @@
 
 .lg-glyphicons {
     font-size: 5.0em;
-    color: #a94442;
+    color: #0066CC;
 }
 
 .hahu-row {
     height: 400px;
     vertical-align: central;
-}
-
-.mainpage {
-    /*background-color:white;*/
-    /*border-width: 2px;
-    border-style: solid;
-    border-color: #f6f6f6;*/
 }
 
 .hahu-header {
@@ -25,14 +18,12 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
     opacity:0.1;
     -moz-opacity: 0.10; 
-    
     position:absolute; top:0px; left:0px; background-image:url('/images/classroom.jpg'); width:100%;margin-top:70px;
-
 }
 
 .hahu-about-fullwidth{
-    background-color: rgb(217, 237, 247);
-    color: rgb(49, 112, 143);
+    background-color: #f6f6f6;
+    color: #003366;
 }
 
 .hahu-apply-fullwidth{
@@ -42,7 +33,6 @@
 
 .hahu-transparent-fullwidth{
 }
-
 
 .hahu-row-left {
     float:left;
@@ -83,4 +73,8 @@
 
 .hahu-carousel-end {
     clear:left;
+}
+
+.hahu-thumbnail {
+    margin: 20px;
 }
